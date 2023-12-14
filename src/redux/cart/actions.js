@@ -6,6 +6,11 @@ export const addProductToCart = (payload) =>({
 });
 
 export const removeProductOfCart = (payload) =>({
-  type: CartActionTypes.REMOVE,
+  type: CartActionTypes.REMOVE_PRODUCT,
+  payload,
+})
+
+export const decreaseProductOfCart = (payload) =>({
+  type: CartActionTypes.DECREASE_PRODUCT,
   payload,
 })
